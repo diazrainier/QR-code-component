@@ -7,16 +7,28 @@
 
 body {
     background-color: hsl(212, 45%, 89%);
-    font-family: 'Outfit', sans-serif;
-    min-height: 100vh;  
-    display: flex;
-    align-items: center;
+    font-family: 'Outfit', sans-serif;  
     font-size: 15px;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 .container {
     width: 360px;
     margin: 0 auto;
+}
+/* Visually hidden class */
+.visually-hidden {
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute; /*to keep layout intact */
+    white-space: nowrap; /* Avoid screen readers from skipping word spacing */
+    width: 1px;
 }
 
 .card {
